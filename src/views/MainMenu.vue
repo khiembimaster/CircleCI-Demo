@@ -7,7 +7,7 @@
             <ion-menu-button></ion-menu-button>
           </template>
         </ion-buttons>
-        <ion-title>Continuous Food Delivery</ion-title>
+        <ion-title>Continuous Food Delivery (CFD)</ion-title>
       </ion-toolbar>
     </ion-header>
 
