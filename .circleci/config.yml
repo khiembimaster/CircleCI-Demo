@@ -38,6 +38,15 @@ jobs:
       - store_test_results:
           path: test-results
 
+  deploy:
+    docker:
+      - image: cimg/node:16.16
+    steps:
+      - run:
+          name: Deploy master to Heroku
+          command: |
+            git push https://heroku:HRKU-7c93ea27-3b77-41ff-b5ec-317ad1b833e5@git.heroku.com/cryptic-sands-92482.git master
+
 workflows:
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
