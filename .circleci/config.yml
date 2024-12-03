@@ -43,7 +43,7 @@ workflows:
       - test
       - cypress/run:
           package-manager: yarn
-          start-command: yarn start
+          start-command: yarn run test:e2e --headless
       # For running simple node tests, you could optionally instead use the node/test job from the orb to replicate and replace the manually defined "test" job above in fewer lines.
       # - node/test
       - heroku/deploy-via-git:
